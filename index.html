@@ -1525,24 +1525,7 @@
             });
         }
         
-        var addLeiaAd = function() {
-            var img = document.createElement('img');
-            var tag = document.createElement('a');
-            img.id = 'leiaAdLogo';
-            img.setAttribute('src', 'https://heyleia.com/images/poweredBy.png');
-            
-            if (window.self === window.top && window.location.search !== '?site=live') {
-                tag.setAttribute('href', 'https://heyleia.com/direct?src=site');
-                tag.setAttribute('target', '_blank');
-            } else {
-                img.onclick = function() {
-                    swal('Remove Leia Ad', 'You can remove this ad by upgrading to Leia Pro for just $0.99 permonth! This includes hosting and everything else you need for your site.', 'info');
-                }
-            }
-            
-            tag.appendChild(img);
-            document.body.appendChild(tag);
-        }
+       
     </script>
     <!-- Config CSS -->
     </html>
